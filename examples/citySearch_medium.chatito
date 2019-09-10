@@ -1,0 +1,52 @@
+%[findByCityAndCategory]('training': '1000', 'testing': '100')
+    ~[greet?] ~[botName?] ~[please?] ~[find?] ~[restaurants?] ~[nearby] @[city]
+
+~[greet]
+    hey
+    hi
+    hello
+    greetings
+
+~[botName]
+    Pia
+
+~[please]
+    please
+    pls
+
+~[find]
+    find
+    search
+    lookup
+
+~[nearby]
+    close to
+    in the area of
+    within
+    located at
+    nearby
+
+~[restaurants]
+    restaurants
+    places to eat
+    where to eat
+
+~[newYork]('synonym': 'true')
+    new york ~[city?]
+    ny ~[city?]
+
+~[sanFrancisco]('synonym': 'true')
+    san francisco
+    san francisco city
+
+~[atlanta]('synonym': 'true')
+    atlanta
+    atlanta city
+
+~[city]
+    city
+
+@[city]('entity': 'location')
+    ~[newYork]
+    ~[sanFrancisco]
+    ~[atlanta]
