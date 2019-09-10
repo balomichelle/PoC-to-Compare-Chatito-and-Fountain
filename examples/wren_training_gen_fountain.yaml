@@ -1,0 +1,149 @@
+## part of the data example in the projects that use Fountain
+
+findNewsContent:
+  - utterance: (please find|find out|Help me search|I'd like to find|I'd like to find out|I'd like to know|I would like to know|Show me|Please show me|I'd like to see|I would like to see) what's in the news on {findNewsContent_orgName:findNewsContent_orgName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+        - U.S. News & World Report
+        - TRT
+        - TV Today Network
+        - CBC
+        - DW-TV
+        - Euronews
+        - NPO
+        - TF1
+        - beIN Sports
+        - ESPNews
+        - Sky Sport 24
+        - Sky Meteo24
+
+  - utterance: (what is in|what's in|Please pull up the|Wish to hear|Look up|I'd like to find|Would like to find the|Can I get the|Give me|I'm wondering what are|I am wondering what are the latest news) the news (on|from) {findNewsContent_orgName:findNewsContent_orgName}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - The Wall Street Journal
+        - The New York Times
+        - USA Today
+        - Los Angeles Times
+        - The Mercury News
+        - New York Daily News
+        - New York Post
+        - The Washington Post
+        - Chicago Sun-Times
+        - The Denver Post
+        - Chicago Tribune
+        - The Dallas Morning News
+        - Newsday   Long Island
+        - Houston Chronicle
+        - Orange County Register
+        - The Star-Ledger   Newark
+        - Tampa Bay Times   Tampa
+        - The Plain Dealer
+        - The Philadelphia Inquirer
+        - Star Tribune
+        - The Arizona Republic
+        - Honolulu Star-Advertiser
+        - Las Vegas Review-Journal
+        - The San Diego Union-Tribune
+        - The Boston Globe
+        - Daily Mail
+        - The Mail on Sunday
+        - Daily Express
+        - Sunday Express
+        - The Sun on Sunday
+        - Daily Mirror
+        - Sunday Mirror
+        - Sunday People
+        - Daily Star
+        - Daily Star Sunday
+        - Morning Star
+        - The Yomiuri Shimbun
+        - The Asahi Shimbun
+        - USA Today
+        - Dainik Bhaskar
+        - Dainik Jagran
+        - The Mainichi Newspapers
+        - Cankao Xiaoxi
+        - Amar Ujala
+        - The Times of India
+        - The Nikkei
+        - People's Daily
+        - Chunichi Shimbun
+        - Hindustan Dainik
+        - Malayala Manorama
+        - The Wall Street Journal
+        - Bild
+        - The New York Times
+        - Guangzhou Daily
+
+  - utterance: (what is|what's) {findNewsContent_orgName:findNewsContent_orgName} saying happened {findNewsContent_timeFrame:findNewsContent_timeFrame}
+    slots:
+      findNewsContent_orgName:findNewsContent_orgName:
+        - BBC
+        - The Wall Street Journal
+        - The Washington Post
+        - The Guardian
+        - The National Times
+        - The Times
+        - Bloomberg
+        - Al Jazeera
+        - Al-Jazeera
+        - ABC News
+        - CBS News
+        - CNN
+        - Fox News
+        - MSNBC
+        - NBC News
+        - New York Times
+        - Los Angeles Times
+        - USA Today
+        - The Wall Street Journal
+        - Washington Post
+        - Newsweek
+        - Time
+        - U.S. News & World Report
+        - TRT
+        - TV Today Network
+        - CBC
+        - DW-TV
+        - Euronews
+        - NPO
+        - TF1
+        - beIN Sports
+        - ESPNews
+        - Sky Sport 24
+        - Sky Meteo24
+
+      findNewsContent_timeFrame:findNewsContent_timeFrame:
+        - coming day
+        - upcoming day
+        - this day
+        - last day
+        - past week
+        - previous month
+        - current week
+        - this morning
+        - this afternoon
+        - tonight
+        - this evening
