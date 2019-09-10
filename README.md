@@ -5,7 +5,7 @@ Fountain and Chatito are both useful in generating dataset for training and vali
 
 The comparison between Chatito and Fountain is conducted as per the following aspects:
 
-DSL (Domain Specific Language) Syntax
-Data Generation Probabilities
-Slots Recognition 
-Overfitting Problem
+1. DSL (Domain Specific Language) Syntax
+2. Data Generation Probabilities
+3. Slots Recognition 
+4. Overfitting Problem
