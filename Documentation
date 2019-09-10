@@ -1,0 +1,67 @@
+Chatito vs Fountain
+
+
+The two projects actually have different goals:
+
+Chatito aims at a generic but powerful DSL, that should stay simple. 
+While it is perfectly fine for small projects, when projects get larger, this simplicity may become a burden: 
+your template file becomes overwhelmingly large, to the point you get lost inside it.
+
+Fountain defines a more complex DSL to be able to manage larger projects. 
+
+As an example, the Chatito data:
+
+// This template defines different ways to ask for the location of toilets (Chatito version)
+%[ask_toilet]('training': '3')
+    ~[sorry?] ~[tell me] where the @[toilet#singular] is ~[please?]?
+    ~[sorry?] ~[tell me] where the @[toilet#plural] are ~[please?]?
+
+~[sorry]
+    sorry
+    Sorry
+    excuse me
+    Excuse me
+
+~[tell me]
+    ~[can you?] tell me
+    ~[can you?] show me
+~[can you]
+    can you
+    could you
+    would you
+
+~[please]
+    please
+
+@[toilet#singular]
+    toilet
+    loo
+@[toilet#plural]
+    toilets
+
+As an example, the Fountain data:
+
+// This template defines different ways to ask for the location of toilets (Fountain version)
+%[&ask_toilet](3)
+    ~[sorry?] ~[tell me] where the {@[toilet#singular] is/@[toilet#plural] are} [please?]?
+
+~[sorry]
+    sorry
+    excuse me
+
+~[tell me]
+    ~[can you?] {tell/show} me
+~[can you]
+    {can/could/would} you
+
+@[toilet#singular]
+    toilet
+    loo
+@[toilet#plural]
+    toilets
+    
+The Chatito version is arguably easier to read, but the Fountain version is shorter,
+which may be very useful when dealing with lots of templates and potential repetition.
+
+
+    
